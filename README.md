@@ -15,9 +15,9 @@ Adds a `/test-tool` command to Claude Code that lets you:
 ### 1. Install dependencies
 
 ```bash
-pip install scalekit-sdk python-dotenv
+pip install -r requirements.txt
 # or
-uv add scalekit-sdk python-dotenv
+uv add scalekit-sdk-python python-dotenv
 ```
 
 ### 2. Configure credentials
