@@ -1,0 +1,10 @@
+{
+  "name": "scalekit-actions-skill",
+  "description": "Test and build workflows with Scalekit Connect tools",
+  "version": "1.0.0",
+  "author": {
+    "name": "Scalekit"
+  },
+  "homepage": "https://github.com/scalekit-inc/scalekit-actions-skill",
+  "license": "MIT"
+}
