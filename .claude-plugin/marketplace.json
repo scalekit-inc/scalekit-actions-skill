@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "scalekit-actions-skill",
-      "source": ".",
+      "source": "./",
       "description": "Scalekit actions playground in your Claude Code",
       "version": "1.0.0"
     }

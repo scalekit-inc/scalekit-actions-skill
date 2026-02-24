@@ -1,10 +1,17 @@
 {
   "name": "scalekit-actions-skill",
-  "description": "Test and build workflows with Scalekit Connect tools",
   "version": "1.0.0",
+  "description": "Scalekit actions playground in your Claude Code",
   "author": {
     "name": "Scalekit"
   },
-  "homepage": "https://github.com/scalekit-inc/scalekit-actions-skill",
-  "license": "MIT"
+  "repository": "https://github.com/scalekit-inc/scalekit-actions-skill",
+  "license": "MIT",
+  "keywords": [
+    "scalekit",
+    "connect",
+    "oauth",
+    "tools",
+    "integrations"
+  ]
 }
