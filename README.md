@@ -1,8 +1,8 @@
 # scalekit-actions-skill
 
-Scalekit actions playground in your Claude Code.
+Rapidly add Scalekit tools to your app — directly from Claude Code.
 
-Use this skill in Claude Code or other coding agents to quickly add Scalekit Connect tools — generate auth links, execute tools on behalf of users, and build multi-step workflows without leaving your editor.
+Install this skill and ask Claude in plain English to execute any Scalekit Connect tool. Claude handles the auth flow, calls the tool, and returns structured output you can use to build and test workflows — all without leaving your editor.
 
 ## Get started
 
@@ -22,3 +22,17 @@ TOOL_CLIENT_SECRET=your_client_secret
 **3. Just ask**
 
 Open Claude Code and ask it to execute any Scalekit tool, generate an auth link, or build a workflow. The skill handles the rest.
+
+## Example
+
+Ask Claude in natural language — it discovers the available tools and picks the right one:
+
+![Ask Claude to create a spreadsheet](assets/screenshot-ask.png)
+
+Claude explores the tool schema to understand inputs and requirements:
+
+![Tool schema exploration](assets/screenshot-tools.png)
+
+Then executes the tool and returns structured parameters along with the exact JSON passed to `execute_tool` — ready to copy into your code:
+
+![Parameters and execute_tool output](assets/screenshot-output.png)
