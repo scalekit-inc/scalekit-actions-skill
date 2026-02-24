@@ -1,0 +1,14 @@
+{
+  "name": "scalekit-actions-skill",
+  "owner": {
+    "name": "Scalekit"
+  },
+  "plugins": [
+    {
+      "name": "scalekit-actions-skill",
+      "source": ".",
+      "description": "Scalekit actions playground in your Claude Code",
+      "version": "1.0.0"
+    }
+  ]
+}
