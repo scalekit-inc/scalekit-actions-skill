@@ -40,7 +40,29 @@ Parse `$ARGUMENTS` to determine the operation and run the appropriate command us
 
 **How to invoke `connect.py`:** Check which runner is available on the current machine by running `which uv` — if found, prefix commands with `uv run python`; otherwise fall back to `python3` (or `python`). Do this check once before running any commands.
 
-Credentials are loaded automatically from `.env` in the working directory.
+### Before running any operation — check for credentials
+
+Check if `.env` exists in the working directory and contains all three required variables:
+- `TOOL_ENV_URL`
+- `TOOL_CLIENT_ID`
+- `TOOL_CLIENT_SECRET`
+
+If `.env` is missing or any of these variables are absent or empty, ask the developer for them before proceeding:
+
+> "To connect to Scalekit, I need your environment details. Please provide:
+> - **Environment URL** (e.g. `https://your-env.scalekit.dev`)
+> - **Client ID** (e.g. `skc_...`)
+> - **Client Secret**"
+
+Once provided, create or update `.env` with the values:
+
+```
+TOOL_ENV_URL=<value>
+TOOL_CLIENT_ID=<value>
+TOOL_CLIENT_SECRET=<value>
+```
+
+Then proceed with the operation.
 
 ### If operation is `generate-link`:
 
