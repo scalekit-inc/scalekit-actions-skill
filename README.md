@@ -27,12 +27,12 @@ Open Claude Code and ask it to execute any Scalekit tool, generate an auth link,
 
 Ask Claude in natural language — it discovers the available tools and picks the right one:
 
-![Ask Claude to create a spreadsheet](assets/screenshot-ask.png)
+<img src="assets/screenshot-ask.png" width="600" />
 
 Claude explores the tool schema to understand inputs and requirements:
 
-![Tool schema exploration](assets/screenshot-tools.png)
+<img src="assets/screenshot-tools.png" width="600" />
 
 Then executes the tool and returns structured parameters along with the exact JSON passed to `execute_tool` — ready to copy into your code:
 
-![Parameters and execute_tool output](assets/screenshot-output.png)
+<img src="assets/screenshot-output.png" width="600" />
