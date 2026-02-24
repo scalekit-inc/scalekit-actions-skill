@@ -95,18 +95,34 @@ Show the output clearly. If a magic link was generated, highlight it so the user
 
 Then display the exact command that was run in a code block (with all values filled in, no placeholders). Label it **"Command run:"** — this is used for documentation.
 
-Then display the parameters used in a structured block. Label it **"Parameters:"** — list each param as a key-value pair. For example:
+Then display the parameters used in a structured block. Label it **"Parameters:"** — list each param as a key-value pair. For `execute-tool`, expand every field inside `tool_input` as its own row (do not collapse them into a single `tool_input` row). For example:
 
 **Parameters:**
 | Parameter | Value |
 |-----------|-------|
 | operation | execute-tool |
-| tool_name | googledocs_create_document |
-| connection_name | googledocs-ci3BvjJC |
-| identifier | Jiten |
-| tool_input | `{"title": "My Doc"}` |
+| tool_name | googlesheets_update_values |
+| connection_name | google_sheets |
+| identifier | claude |
+| spreadsheet_id | `16bMVr_7yzjYc1Inzm1xRUIXOk_0TtVoe3RSBuDVZH3M` |
+| range | `Sheet1!A1:C4` |
+| values | `[["column1","column2","column3"],...]` |
+| value_input_option | `RAW` |
 
-Always include all parameters that were passed, even optional ones. Omit parameters that were not used.
+Always include all parameters. Omit parameters that were not used.
+
+Then show the exact JSON passed to the `execute_tool` SDK function. Label it **"execute_tool input:"**:
+
+```json
+{
+  "tool_name": "<tool_name>",
+  "identifier": "<identifier>",
+  "connected_account_id": "<id>",
+  "tool_input": { ...all tool_input fields... }
+}
+```
+
+Fill in all real values — no placeholders.
 
 #### Workflow context:
 
